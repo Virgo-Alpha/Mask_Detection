@@ -1,6 +1,6 @@
 # Description
 
-Begin with the Tutorial section [here](https://zindi.africa/competitions/spot-the-mask) then proceed to this Tutorial: [A Deep Learning Approach](https://zindi.africa/learn/spot-the-mask-challenge-tutorial-a-deep-learning-approach)
+Begin with this Tutorial: [A Deep Learning Approach](https://zindi.africa/learn/spot-the-mask-challenge-tutorial-a-deep-learning-approach) then proceed to the Climbing the Ladder: Image Recognition for ML Competitions (Tutorial) [here](https://zindi.africa/competitions/spot-the-mask)
 
 Face masks have become a common public sight in the last few months. The Centers for Disease Control (CDC) recently advised the use of simple cloth face coverings to slow the spread of the virus and help people who may have the virus and do not know it from transmitting it to others. Wearing masks is broadly recognised as critical to reducing community transmission and limiting touching of the face.
 
