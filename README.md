@@ -18,3 +18,8 @@ ttuqxjhrmdqhppfxrbzgyciipwdxcf.jpg     0.99
 qmltykiislwklsklnzhcsrfsqwmaun.jpg     0.23
 lkzeblenqbovljxpucpsufmprjxxqn.jpg     0.67
 ```
+
+TODO:
+1. Predict one photo in the detector nb
+2. Convert the pipeline into .py file or download the model
+3. Make a streamlit file where you can take pics or upload them and predict
