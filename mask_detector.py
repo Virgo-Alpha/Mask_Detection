@@ -1,8 +1,11 @@
 from fastai.learner import load_learner
 
 # Load the model
-model_path = '/content/drive/My Drive/Colab Notebooks/mask_classifier_model.pkl'
-learn = load_learner(model_path)
+model_path = 'study_nbs/mask_classifier_model.pkl'
+# learn = load_learner(model_path)
+
+if __name__ == '__main__':
+    learn = load_learner(model_path, cpu=True)
 
 def predict_mask(image):
     dl = learn.dls.test_dl([image])

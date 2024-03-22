@@ -1,5 +1,19 @@
 import streamlit as st
 import time
+from fastai.learner import load_learner
+
+# Load the model
+model_path = 'study_nbs/mask_classifier_model.pkl'
+# learn = load_learner(model_path)
+
+learn = load_learner(model_path, cpu=True)
+
+def predict_mask(image):
+    dl = learn.dls.test_dl([image])
+    test_pred, _ = learn.get_preds(dl=dl)
+    predicted_class_idx = test_pred.numpy()[0].argmax()
+    return "masked" if predicted_class_idx == 1 else "not masked"
+
 
 if "photo" not in st.session_state:
     st.session_state["photo"] = "not done"
@@ -31,3 +45,7 @@ if st.session_state["photo"] == "done":
             st.image(camera_photo, use_column_width=True)
         else:
             st.image(uploaded_photo, use_column_width=True)
+
+prediction = predict_mask(uploaded_photo) if uploaded_photo is not None else predict_mask(camera_photo)
+
+col2.markdown(f"## Prediction: {prediction}")
